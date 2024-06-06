@@ -257,6 +257,25 @@ namespace ToDoIkonAPI.Models
             }
             return response;
         }
+        public Response UpdateSarcinaFull(Sarcina sarcina, SqlConnection connection)
+        {
+            Response response = new Response();
+            SqlCommand cmd = new SqlCommand("Update Sarcina set Cerinta ='" + sarcina.Cerinta + "', Activ='"+sarcina.Activ+"' where Id='" + sarcina.Id + "'", connection);
+            connection.Open();
+            int i = cmd.ExecuteNonQuery();
+            connection.Close();
+            if (i > 0)
+            {
+                response.StatusCode = 200;
+                response.StatusMessage = "Task Updated";
+            }
+            else
+            {
+                response.StatusCode = 100;
+                response.StatusMessage = "Fail to Update";
+            }
+            return response;
+        }
         public Response DeleteCompletedSarcina(Sarcina sarcina, SqlConnection connection)
         {
             Response response = new Response();

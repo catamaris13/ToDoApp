@@ -50,6 +50,17 @@ namespace ToDoIkonAPI.Controllers
             return response;
         }
         [HttpPost]
+        [Route("UpdateSarcinaFull")]
+        public Response UpdateSarcinaFull(Sarcina sarcina)
+        {
+            Response response = new Response();
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("ToDoIkonConnectionString").ToString());
+            Dal dal = new Dal();
+            response = dal.UpdateSarcinaFull(sarcina, connection);
+
+            return response;
+        }
+        [HttpPost]
         [Route("SarcinaListOldestToNewest")]
 
         public Response SarcinaListOldestToNewest(Sarcina sarcina)

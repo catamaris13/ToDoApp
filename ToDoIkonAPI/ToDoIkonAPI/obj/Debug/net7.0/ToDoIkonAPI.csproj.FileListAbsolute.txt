@@ -74,3 +74,4 @@ C:\Users\catal\OneDrive\Desktop\ToDoIKON\ToDoIkonAPI\ToDoIkonAPI\obj\Debug\net7.
 C:\Users\catal\OneDrive\Desktop\ToDoIKON\ToDoIkonAPI\ToDoIkonAPI\obj\Debug\net7.0\ToDoIkonAPI.pdb
 C:\Users\catal\OneDrive\Desktop\ToDoIKON\ToDoIkonAPI\ToDoIkonAPI\obj\Debug\net7.0\ToDoIkonAPI.genruntimeconfig.cache
 C:\Users\catal\OneDrive\Desktop\ToDoIKON\ToDoIkonAPI\ToDoIkonAPI\obj\Debug\net7.0\ref\ToDoIkonAPI.dll
+C:\Users\catal\OneDrive\Desktop\ToDoIKON\ToDoIkonAPI\ToDoIkonAPI\obj\Debug\net7.0\ToDoIkonAPI.sourcelink.json
